@@ -153,5 +153,4 @@ const youngestPerson = people.reduce((youngest, person) =>
 );
 console.log(youngestPerson.age);
 // log the number of Glady's siblings
-const Gladys = people.find((person) => person.name === "Gladys");
-console.log(Gladys.siblings.length);
+console.log(people[6].siblings.length);

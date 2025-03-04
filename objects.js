@@ -139,18 +139,43 @@ const people = [
 // the age of the youngest person
 // log the number of Glady's siblings
 
-// 1.print/log the work place for the thrid person
+// 1.print/log the work place for the third person
 console.log(people[2].work.company);
 // 2.log the name of Felix's sibling
-const felix = people.find((person) => person.name === "Felix");
-console.log(felix.siblings[0].name);
+
+console.log(people[5].siblings[0].name);
 // 3. Log the second school that Diana went to
 const diana = people.find((person) => person.name === "Diana");
 console.log(diana.schools[1]);
 // 4.the age of the youngest person
-const youngestPerson = people.reduce((youngest, person) =>
-  person.age < youngest.age ? person : youngest
-);
-console.log(youngestPerson.age);
+function finYoungestPerson(peopleList) {
+  let youngestAge = peopleList[0].age; // an assumption - first person in the list is the youngest
+  for (let index = 1; index < peopleList.length; index++) {
+    if (peopleList[index].age < youngAge) {
+      // if current person in the loop is younger -- update the youngestAge
+      youngAge = peopleList[index].age;
+    }
+  }
+  console.log(youngestAge);
+  // const youngestPerson = peopleList.find(
+  //   (person) => person.age === youngestAge
+  // ).name;
+  // console.log(youngestPerson);
+}
+// findYoungestPerson(people);
+// const youngestPerson = people.reduce((youngest, person) =>
+//   person.age < youngest.age ? person : youngest
+// );
+// console.log(youngestPerson.age);
 // log the number of Glady's siblings
 console.log(people[6].siblings.length);
+
+// Number
+//  JS global objects --- strings, Number, Array, Objects, Math, Date ..... provide properties and methods
+//  (fuction) help manipulate data
+
+const colors = ["red", "green"];
+console.log(colors.push("yellow"));
+console.log(colors);
+console.log(colors.reverse());
+

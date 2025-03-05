@@ -78,12 +78,19 @@ ChangeNamesToUppercase(["jane", "isaiah", "aron", "george"]);
 // almost everything in javascript is an object
 
 // Reverse string: Write a function that takes a string as an argument and returns the string reversed.
-function newText(event1) {
-  let x = event1.split("");
-  return console.log(x);
+const email = "isaiahrotich51@gmail.com";
+function reverseString(sentence) {
+  const arrayOfCharacters = sentence.split("");
+  console.log(arrayOfCharacters);
+  const reversedArrayOfChars = arrayOfCharacters.reverse();
+  console.log(reversedArrayOfChars);
+  return reversedArrayOfChars.join("");
+  // return sentence.split("").reverse().join("") (simplest way)
 }
+console.log(reverseString(email));
+console.log(reverseString("Hellow World"));
+console.log(reverseString("Albert"));
 
-newText("Albert");
 // You can use string methods such as split(), reverse(), and join() to accomplish this task.
 /* const name = ["victor", "fiona"];
 console.log(name.reverse()); */
@@ -100,3 +107,17 @@ function getAverage(numbers) {
 }
 let numbers = ["30", "20", "10"];
 console.log(getAverage(numbers));
+
+// Given an array of numbers, write a function that finds the maximum number in the array.
+
+// function getMaximumNumber(numbers) {
+//   if (numbers.length === 0) return 0;
+//   let getMaximumNumber = 0;
+
+// Given an array of numbers, write a function that finds the maximum number in the array.
+const scores = [32, 4, 55, 2, 87];
+console.log(...scores); // the spread operator
+
+console.log(Math.max(...scores));
+
+// console.log(Math.max(32, 45, 12));

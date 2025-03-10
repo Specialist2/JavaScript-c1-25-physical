@@ -13,7 +13,7 @@ Longest word in a string: Write a function that takes a string as an argument an
 - Longest Word: Find and display the longest word in the paragraph. In case of multiple words with the same longest length, display the first one encountered.
 
 - Word Frequency: Determine the frequency of each word in the paragraph. Create an object where the keys are the unique words and the values are the corresponding frequencies.
-
+ruit
 - Most Frequent Word: Identify the word(s) with the highest frequency in the paragraph. Display the word(s) and its frequency. If there are multiple words with the same highest frequency, display all of them.
 
 Your program should take the paragraph as input and output the results.

@@ -27,6 +27,49 @@ function smsSender(phone) {
   console.log("Sending drafted SMS to: " + phone);
 }
 
+
+
+// sort,reduce,filter,forEach ----HOF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function validatePassword(password) {
   //more than 8 characters , contains number
 

@@ -5,6 +5,7 @@ fs.writeFile(
   "We are amazing!!! \n Second  line",
   "utf-8",
   function logError(error) {
+    if (error)
     console.log("Hello!!");
     console.log("An errow occured!!");
     console.log("here it is:" + error.message);
